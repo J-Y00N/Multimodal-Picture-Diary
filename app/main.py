@@ -46,6 +46,14 @@ def main() -> None:
     default_style_index = style_options.index(SETTINGS.default_style) if SETTINGS.default_style in style_options else 0
 
     with st.sidebar:
+        generation_profile = st.radio(
+            "Model usage",
+            options=["lora_styled", "base_model_only"],
+            format_func=lambda key: "LoRA styled" if key == "lora_styled" else "Base model only",
+            index=0,
+            help="Base model only disables the selected LoRA adapter so the foundation model can generalize more freely.",
+        )
+        use_base_model_only = generation_profile == "base_model_only"
         style_key = st.selectbox(
             "Style",
             options=style_options,
@@ -68,24 +76,31 @@ def main() -> None:
             height = st.selectbox("Height", options=[512, 768], index=[512, 768].index(preset.height) if preset.height in [512, 768] else 0)
             steps = st.slider("Steps", min_value=10, max_value=50, value=preset.steps, step=1)
             guidance_scale = st.slider("Guidance Scale", min_value=1.0, max_value=12.0, value=preset.guidance_scale, step=0.5)
-            lora_scale = st.slider("LoRA Strength", min_value=0.5, max_value=1.3, value=preset.lora_scale, step=0.05)
+            lora_scale = st.slider(
+                "LoRA Strength",
+                min_value=0.0,
+                max_value=1.5,
+                value=0.0 if use_base_model_only else preset.lora_scale,
+                step=0.05,
+                disabled=use_base_model_only,
+            )
         else:
             width = preset.width
             height = preset.height
             steps = preset.steps
             guidance_scale = preset.guidance_scale
-            lora_scale = preset.lora_scale
+            lora_scale = 0.0 if use_base_model_only else preset.lora_scale
 
         seed_enabled = st.toggle("Use fixed seed", value=False)
         seed = st.number_input("Seed", min_value=0, max_value=2_147_483_647, value=42, step=1, disabled=not seed_enabled)
 
-        st.caption(
-            f"Preset: {width}x{height}, {steps} steps, CFG {guidance_scale:.1f}, LoRA {lora_scale:.2f}"
-        )
+        st.caption(f"Preset: {width}x{height}, {steps} steps, CFG {guidance_scale:.1f}, LoRA {lora_scale:.2f}")
         if ai_rewrite_available:
             st.caption(f"AI rewrite available. Prompt planning mode: {effective_planner_label}.")
         else:
             st.caption(f"AI rewrite off. Prompt planning mode: {effective_planner_label}.")
+        if use_base_model_only:
+            st.caption("Base model only mode removes the selected LoRA adapter and style trigger for broader generalization.")
 
     diary_text = st.text_area(
         "Diary text",
@@ -117,7 +132,7 @@ def main() -> None:
 
     mode_config = REFERENCE_STYLIZATION_MODES[reference_style_mode]
     effective_denoise_strength = mode_config["denoise_strength"]
-    effective_lora_scale = min(1.3, round(lora_scale * mode_config["lora_scale_factor"], 2))
+    effective_lora_scale = min(1.5, round(lora_scale * mode_config["lora_scale_factor"], 2))
     effective_guidance_scale = max(1.0, min(12.0, round(guidance_scale + mode_config["guidance_delta"], 2)))
 
     if use_reference_mode and advanced_controls:
@@ -131,10 +146,11 @@ def main() -> None:
         )
         effective_lora_scale = st.slider(
             "Reference LoRA Strength",
-            min_value=0.5,
-            max_value=1.3,
+            min_value=0.0,
+            max_value=1.5,
             value=float(effective_lora_scale),
             step=0.05,
+            disabled=use_base_model_only,
         )
         effective_guidance_scale = st.slider(
             "Reference Guidance Scale",
@@ -151,10 +167,10 @@ def main() -> None:
         if use_reference_mode:
             st.info(
                 f"Reference mode: {REFERENCE_STYLIZATION_MODES[reference_style_mode]['label']} "
-                f"(denoise {effective_denoise_strength:.2f}, LoRA {effective_lora_scale:.2f})"
+                f"(denoise {effective_denoise_strength:.2f}, LoRA {0.0 if use_base_model_only else effective_lora_scale:.2f})"
             )
         else:
-            st.info("V1 권장 범위: text → prompt → LoRA image → diary page composition")
+            st.info("V1 권장 범위: text → prompt → image generation → diary page composition")
 
     if generate_clicked:
         if not diary_text.strip():
@@ -176,7 +192,8 @@ def main() -> None:
                 guidance_scale=effective_guidance_scale if use_reference_mode else guidance_scale,
                 width=width,
                 height=height,
-                lora_scale=effective_lora_scale if use_reference_mode else lora_scale,
+                lora_scale=0.0 if use_base_model_only else (effective_lora_scale if use_reference_mode else lora_scale),
+                use_base_model_only=use_base_model_only,
                 denoise_strength=effective_denoise_strength,
                 seed=int(seed) if seed_enabled else None,
                 reference_image=reference_image,
@@ -209,7 +226,8 @@ def main() -> None:
 
         with st.expander("Prompt details", expanded=False):
             st.write("Style / Preset")
-            st.code(f"{result.style_key} / {result.preset_key} (LoRA {result.lora_scale:.2f})")
+            mode_label = "base-model-only" if result.use_base_model_only else "lora-styled"
+            st.code(f"{result.style_key} / {result.preset_key} ({mode_label}, LoRA {result.lora_scale:.2f})")
             st.write("Generation Mode")
             st.code("img2img" if result.used_reference_image else "txt2img")
             st.write("Rewritten diary")

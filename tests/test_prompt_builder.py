@@ -7,6 +7,13 @@ def test_prompt_contains_style_trigger() -> None:
     assert "msl monet" in prompt
 
 
+def test_base_model_only_prompt_omits_style_trigger() -> None:
+    builder = PromptBuilder()
+    prompt = builder.build("오늘은 산책을 했다.", "monet", use_style_adapter=False)
+    assert "msl monet" not in prompt
+    assert "soft brush strokes" not in prompt
+
+
 def test_prompt_contains_reference_hint() -> None:
     from PIL import Image
 

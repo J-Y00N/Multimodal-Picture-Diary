@@ -122,7 +122,14 @@ class PromptBuilder:
             extra_details=extra_details,
         )
 
-    def build(self, diary_text: str, style_key: str, reference_image=None) -> str:
+    def build(
+        self,
+        diary_text: str,
+        style_key: str,
+        reference_image=None,
+        *,
+        use_style_adapter: bool = True,
+    ) -> str:
         spec = get_style_spec(style_key)
         fallback_plan = self.rule_based_plan(diary_text, reference_image=reference_image)
         plan = (
@@ -132,13 +139,9 @@ class PromptBuilder:
         )
         prompt_parts = [plan.scene] + plan.subjects
 
-        parts = [
-            spec.trigger,
-            spec.style_note,
-            plan.mood,
-            "diary illustration",
-            ", ".join(part for part in prompt_parts if part),
-        ]
+        parts = [plan.mood, "diary illustration", ", ".join(part for part in prompt_parts if part)]
+        if use_style_adapter:
+            parts = [spec.trigger, spec.style_note] + parts
         if plan.composition:
             parts.append(plan.composition)
         if plan.extra_details:

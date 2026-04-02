@@ -36,28 +36,49 @@ Prompt used for the curated demo set:
 비온 뒤 집으로 가는 중!
 ```
 
-Reference input image:
-
-![Demo input](assets/demo/input/sample.jpg)
-
 `text2img`
 
-![Text2img Monet](assets/demo/output/demo_text2img_monet.png)
-![Text2img Animate Landscape](assets/demo/output/demo_text2img_animate_landscape.png)
+| Monet | Animate Landscape |
+| --- | --- |
+| ![Text2img Monet](assets/demo/output/demo_text2img_monet.png) | ![Text2img Animate Landscape](assets/demo/output/demo_text2img_animate_landscape.png) |
 
-`img2img`
+`original reference -> img2img`
 
 The `img2img` examples below use structure-preserving reference guidance tuned per style.
 Monet uses `denoise_strength=0.25`, while Animate Landscape uses a slightly stronger stylization setting (`denoise_strength=0.32`, `lora_scale=0.95`) so the anime-style background is more visible.
+In general, lower `img2img` denoise settings around `0.2-0.3` are intended for broad photo stylization: they preserve much of the original composition while layering the learned visual style on top.
+This makes the mode suitable for many everyday reference photos, although results still vary depending on the subject matter and how far it sits from the original LoRA training domain.
 
-![Img2img Monet](assets/demo/output/demo_img2img_monet.png)
-![Img2img Animate Landscape](assets/demo/output/demo_img2img_animate_landscape.png)
+<p align="center">
+  <img src="assets/demo/input/sample.jpg" alt="Demo input" width="360" />
+</p>
+
+<table>
+  <tr>
+    <td align="center"><strong>Monet img2img</strong></td>
+    <td align="center"><strong>Animate Landscape img2img</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/demo/output/demo_img2img_monet.png" alt="Img2img Monet" width="360" /></td>
+    <td><img src="assets/demo/output/demo_img2img_animate_landscape.png" alt="Img2img Animate Landscape" width="360" /></td>
+  </tr>
+</table>
 
 Final diary-page export sample from the Streamlit flow:
 
-![Diary page export](assets/demo/output/demo_diary_page_animate_landscape.png)
+<p align="center">
+  <img src="assets/demo/output/demo_diary_page_animate_landscape.png" alt="Diary page export" width="420" />
+</p>
 
 Generation settings for these demo assets are recorded under `assets/demo/metadata/`.
+
+## Current limitations and generalization notes
+
+- Korean diary input is supported through prompt planning and template/rule-based scene conversion, not because the diffusion base model or LoRA adapters are strongly Korean-native.
+- In practice, this means prompts that match known scene patterns tend to work more reliably, while unfamiliar Korean expressions may produce partially inferred or style-led results.
+- OpenAI-based prompt planning can improve dynamic Korean-to-scene conversion, but it introduces external API dependency and potential usage cost.
+- The app now includes a `Base model only` option and wider LoRA strength controls so users can reduce style bias and recover more of the foundation model's general object knowledge when needed.
+- This is especially relevant for prompts outside the preserved LoRA domains, such as food, indoor objects, or subjects that are weakly represented in the original landscape-oriented adapters.
 
 ## Deployer setup
 

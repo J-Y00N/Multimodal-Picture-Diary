@@ -18,6 +18,7 @@ class DiaryRequest:
     width: int
     height: int
     lora_scale: float = 1.0
+    use_base_model_only: bool = False
     denoise_strength: float = 0.35
     seed: Optional[int] = None
     reference_image: Optional[Image.Image] = None
@@ -31,4 +32,5 @@ class GenerationResult:
     style_key: str
     preset_key: str
     lora_scale: float
+    use_base_model_only: bool = False
     used_reference_image: bool = False
