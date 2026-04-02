@@ -1,0 +1,8 @@
+{
+  "mode": "diary_page_export",
+  "source_image": "assets/demo/output/demo_img2img_animate_landscape.png",
+  "style": "animate_landscape",
+  "prompt_text": "비온 뒤 집으로 가는 중!",
+  "diary_text": "비온 뒤 집으로 가는 중!",
+  "show_prompt_notes": false
+}

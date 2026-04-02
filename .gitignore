@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific ignores
+.env.*
+.venv/
+.venv-systempy-backup/
+.DS_Store
+outputs/
+app/__pycache__/
+tests/__pycache__/
+src/**/__pycache__/

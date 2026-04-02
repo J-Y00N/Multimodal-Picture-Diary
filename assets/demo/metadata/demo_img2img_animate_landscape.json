@@ -1,0 +1,13 @@
+{
+  "mode": "img2img",
+  "style": "animate_landscape",
+  "preset": "balanced",
+  "seed": 42,
+  "prompt_text": "비온 뒤 집으로 가는 중!",
+  "reference_image": "assets/demo/input/sample.jpg",
+  "reference_mode": "animate_tuned_demo",
+  "denoise_strength": 0.32,
+  "lora_scale": 0.95,
+  "guidance_scale": 7.0,
+  "resolved_prompt": "sms landscape, cinematic anime-style landscape, sky-rich composition, calm, intimate, diary-like, diary illustration, 비온, 집으로, 가는, reference image provided, landscape composition, painterly, cohesive scene, reference image provided, landscape composition"
+}

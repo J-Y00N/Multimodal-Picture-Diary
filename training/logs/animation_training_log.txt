@@ -1,0 +1,788 @@
+# Dataset
+
+
+Tag frequencies:
+scenery: 1127
+outdoors: 1097
+no humans: 914
+sky: 873
+cloud: 709
+tree: 521
+day: 421
+night: 360
+cloudy sky: 338
+1girl: 311
+building: 295
+grass: 280
+star (sky): 277
+night sky: 261
+black hair: 252
+blue sky: 245
+starry sky: 232
+nature: 225
+sunlight: 220
+solo: 217
+1boy: 205
+short hair: 201
+water: 182
+sunset: 181
+road: 160
+power lines: 148
+blurry: 146
+landscape: 145
+city: 143
+plant: 139
+ground vehicle: 133
+shirt: 125
+cityscape: 124
+bag: 123
+window: 117
+brown hair: 111
+forest: 107
+mountain: 103
+lamppost: 99
+rain: 98
+sign: 98
+from behind: 98
+school uniform: 97
+indoors: 96
+standing: 91
+long hair: 88
+shooting star: 87
+utility pole: 85
+skirt: 84
+horizon: 82
+snow: 80
+white shirt: 76
+sun: 74
+house: 73
+train: 73
+depth of field: 72
+skyscraper: 70
+train station: 70
+rock: 69
+ocean: 67
+bird: 66
+fence: 66
+leaf: 66
+railroad tracks: 65
+light rays: 64
+motor vehicle: 63
+pants: 63
+railing: 62
+sitting: 60
+snowing: 59
+reflection: 59
+bush: 58
+short sleeves: 53
+male focus: 53
+multiple boys: 53
+brown eyes: 51
+flower: 49
+lens flare: 49
+miyamizu mitsuha: 46
+upper body: 45
+smile: 44
+stairs: 44
+shoes: 43
+holding: 42
+street: 41
+dark: 39
+city lights: 38
+car: 37
+river: 37
+umbrella: 37
+looking at viewer: 36
+road sign: 36
+multiple girls: 35
+hood: 34
+door: 33
+blurry background: 32
+blue theme: 32
+jacket: 32
+open mouth: 32
+chair: 31
+blue eyes: 30
+rainbow: 30
+cherry blossoms: 29
+bridge: 28
+branch: 28
+twintails: 28
+winter: 27
+socks: 27
+moon: 27
+real world location: 27
+2boys: 27
+shadow: 27
+traffic light: 27
+torii: 26
+coat: 25
+ceiling light: 25
+ruins: 25
+ribbon: 25
+bangs: 25
+bench: 25
+table: 24
+mountainous horizon: 24
+petals: 24
+shorts: 24
+green theme: 24
+field: 24
+bow: 24
+blurry foreground: 23
+sunrise: 23
+long sleeves: 22
+architecture: 22
+east asian architecture: 22
+book: 22
+sunbeam: 22
+japanese clothes: 22
+holding umbrella: 22
+chalkboard: 21
+sleeveless: 21
+still life: 20
+classroom: 20
+lake: 20
+above clouds: 20
+ceiling: 20
+wide shot: 20
+holding hands: 20
+hoodie: 20
+copyright name: 20
+black pants: 20
+silhouette: 20
+bicycle: 19
+hood down: 19
+hair ribbon: 19
+dappled sunlight: 18
+desk: 18
+signature: 18
+space: 18
+light: 18
+collared shirt: 17
+closed eyes: 17
+facing away: 17
+english text: 17
+couple: 17
+sliding doors: 16
+kimono: 16
+dress: 16
+bowtie: 16
+red ribbon: 16
+school desk: 15
+parody: 15
+hat: 15
+closed mouth: 15
+shelf: 15
+backpack: 15
+red bow: 15
+moss: 15
+water drop: 14
+food: 14
+wooden floor: 14
+collarbone: 14
+school bag: 14
+transparent: 14
+transparent umbrella: 14
+tears: 14
+kneehighs: 13
+watermark: 13
+planet: 13
+sweater vest: 13
+braid: 13
+anime coloring: 13
+stone lantern: 13
+pleated skirt: 13
+low twintails: 13
+blush: 13
+potted plant: 12
+cup: 12
+fog: 12
+6+boys: 12
+animal: 12
+clock: 12
+black skirt: 12
+2girls: 11
+necktie: 11
+waves: 11
+box: 11
+bare tree: 11
+flying: 11
+vehicle focus: 11
+autumn leaves: 11
+maple leaf: 11
+curtains: 11
+red bowtie: 11
+ponytail: 11
+phone: 11
+choker: 11
+full moon: 10
+monochrome: 10
+artist name: 10
+shade: 10
+autumn: 10
+hetero: 10
+tiles: 10
+lamp: 10
+shrine: 10
+black socks: 10
+scarf: 9
+contrail: 9
+can: 9
+animal focus: 9
+trash can: 9
+stone: 9
+sash: 9
+obi: 9
+bare shoulders: 9
+short shorts: 9
+text focus: 9
+lantern: 9
+crosswalk: 9
+bus: 9
+striped: 9
+black choker: 9
+letterboxed: 9
+looking at another: 9
+looking down: 9
+lying: 8
+sneakers: 8
+instrument: 8
+bottle: 8
+yukata: 8
+overgrown: 8
+breasts: 8
+bookshelf: 8
+pokemon (creature): 8
+fish: 8
+bare arms: 8
+parted lips: 8
+cellphone: 8
+ripples: 8
+sleeveless jacket: 8
+crying: 8
+train interior: 8
+glasses: 7
+shop: 7
+hill: 7
+beam: 7
+path: 7
+beach: 7
+crescent moon: 7
+vending machine: 7
+from above: 7
+jewelry: 7
+twin braids: 7
+pencil: 7
+smartphone: 7
+denim: 7
+sparkle: 7
+vest: 7
+hooded jacket: 7
+twilight: 7
+japan: 6
+mug: 6
+chinese text: 6
+gradient sky: 6
+barefoot: 6
+lily pad: 6
+watercraft: 6
+hallway: 6
+tile floor: 6
+sink: 6
+calendar (object): 6
+wristwatch: 6
+truck: 6
+cover: 6
+t-shirt: 6
+arm up: 6
+sleeveless hoodie: 6
+diffraction spikes: 6
+green necktie: 6
+string: 6
+crying with eyes open: 6
+locker: 5
+6+girls: 5
+fire: 5
+rope: 5
+chain-link fence: 5
+close-up: 5
+out of frame: 5
+white footwear: 5
+blue shorts: 5
+shoes removed: 5
+black eyes: 5
+watch: 5
+basket: 5
+reflective floor: 5
+waterfall: 5
+blonde hair: 5
+black footwear: 5
+brown footwear: 5
+title: 5
+flower pot: 5
+galaxy: 5
+milky way: 5
+wind: 5
+cat: 5
+interlocked fingers: 5
+falling: 5
+serafuku: 5
+on back: 5
+from below: 5
+guitar: 5
+bob cut: 5
+striped necktie: 5
+hair between eyes: 5
+moonlight: 4
+science fiction: 4
+laser: 4
+flag: 4
+weapon: 4
+shore: 4
+hair ornament: 4
+school: 4
+bell: 4
+traffic cone: 4
+bracelet: 4
+glowing: 4
+white hoodie: 4
+slippers: 4
+television: 4
+bed: 4
+tatami: 4
+bowl: 4
+chopsticks: 4
+pen: 4
+pine tree: 4
+walking: 4
+puddle: 4
+high heels: 4
+shopping: 4
+convenience store: 4
+wall clock: 4
+groceries: 4
+loaded interior: 4
+floating hair: 4
+:d: 4
+armpits: 4
+pillow: 4
+own hands together: 4
+own hands clasped: 4
+sweat: 4
+web address: 4
+eraser: 4
+holding phone: 4
+in tree: 4
+boots: 4
+footprints: 4
+string of fate: 4
+loafers: 4
+purple flower: 3
+school chair: 3
+explosion: 3
+spacecraft: 3
+rooftop: 3
+cable: 3
+smoke: 3
+military vehicle: 3
+dog: 3
+sand: 3
+motorcycle: 3
+sleeping: 3
+wings: 3
+trash bag: 3
+cleavage: 3
+purple eyes: 3
+mole: 3
+mole under eye: 3
+traditional media: 3
+red footwear: 3
+desert: 3
+shouji: 3
+pond: 3
+plate: 3
+scissors: 3
+iphone: 3
+hydrangea: 3
+jeans: 3
+hug: 3
+water bottle: 3
+profile: 3
+ship: 3
+fantasy: 3
+vines: 3
+teeth: 3
+style parody: 3
+white hair: 3
+talking on phone: 3
+couch: 3
+formal: 3
+suit: 3
+blue kimono: 3
+green hair: 3
+striped bow: 3
+closed umbrella: 3
+from side: 3
+back-to-back: 3
+sweatdrop: 3
+miko: 3
+sidelocks: 3
+seat: 3
+energy sword: 3
+chain: 2
+eating: 2
+glass: 2
+greyscale: 2
+battle: 2
+palm tree: 2
+tree shade: 2
+gun: 2
+holding gun: 2
+head out of frame: 2
+trumpet: 2
+food focus: 2
+hairclip: 2
+grey sky: 2
+chalk: 2
+black ribbon: 2
+wind chime: 2
+pagoda: 2
+monster: 2
+party hat: 2
+red eyes: 2
+nail polish: 2
+alley: 2
+air conditioner: 2
+guard rail: 2
+washing machine: 2
+alarm clock: 2
+clothes hanger: 2
+blunt bangs: 2
+facing viewer: 2
+collar: 2
+veranda: 2
+garden: 2
+fireplace: 2
+stone stairs: 2
+statue: 2
+laundry: 2
+clothes: 2
+coca-cola: 2
+canvas (object): 2
+easel: 2
+wet: 2
+falling leaves: 2
+sparrow: 2
+wall: 2
+stone wall: 2
+book stack: 2
+mirror: 2
+vase: 2
+striped shirt: 2
+pants rolled up: 2
+sandals removed: 2
+white flower: 2
+boat: 2
+lightning: 2
+light particles: 2
+bokeh: 2
+white jacket: 2
+outstretched arms: 2
+black shorts: 2
+on bed: 2
+sleeveless shirt: 2
+paper: 2
+notebook: 2
+mechanical pencil: 2
+tile wall: 2
+kitchen: 2
+frying pan: 2
+looking outside: 2
+evening: 2
+uniform: 2
+penguin: 2
+animal ears: 2
+bus stop: 2
+crane (machine): 2
+bug: 2
+green bow: 2
+wisteria: 2
+vanishing point: 2
+lights: 2
+cigarette: 2
+smoking: 2
+oil-paper umbrella: 2
+dated: 2
+backlighting: 2
+gradient: 2
+dress shirt: 2
+makeup: 2
+lipstick: 2
+portrait: 2
+frown: 2
+megumin: 2
+blazer: 2
+intravenous drip: 2
+mother and daughter: 2
+father and daughter: 2
+family: 2
+green eyes: 2
+ash ketchum: 2
+reading: 2
+faceless female: 2
+instrument case: 2
+guitar case: 2
+wooden table: 2
+fireflies: 2
+comic: 2
+apron: 1
+pink flower: 1
+black-framed eyewear: 1
+employee uniform: 1
+watering can: 1
+green apron: 1
+alcohol: 1
+drinking glass: 1
+ice: 1
+ice cube: 1
+realistic: 1
+binoculars: 1
+hiding: 1
+telescope: 1
+belt: 1
+teacher: 1
+money: 1
+firing: 1
+destruction: 1
+faceless: 1
+bucket: 1
+cross-laced footwear: 1
+blue footwear: 1
+foot focus: 1
+cracked floor: 1
+holding weapon: 1
+wading: 1
+sleeves rolled up: 1
+ball: 1
+megaphone: 1
+lap pillow: 1
+chips (food): 1
+magazine (object): 1
+on head: 1
+animal on head: 1
+horse: 1
+red wings: 1
+silk: 1
+spider web: 1
+cave: 1
+blue background: 1
+eyeball: 1
+extra eyes: 1
+eye focus: 1
+medium breasts: 1
+one eye closed: 1
+blue nails: 1
+single shoe: 1
+holding shoes: 1
+poster (object): 1
+siblings: 1
+matsuno jyushimatsu: 1
+matsuno ichimatsu: 1
+crow: 1
+flock: 1
+bicycle basket: 1
+:o: 1
+shiba inu: 1
+porch: 1
+open door: 1
+doorway: 1
+paintbrush: 1
+painting (object): 1
+painting (action): 1
+key: 1
+cardboard box: 1
+ema: 1
+skyline: 1
+stream: 1
+hinata hajime: 1
+shimenawa: 1
+brown pants: 1
+candle: 1
+sandals: 1
+aircraft: 1
+sack: 1
+star (symbol): 1
+military: 1
+looking back: 1
+pillar: 1
+arch: 1
+very wide shot: 1
+chimney: 1
+cliff: 1
+white dress: 1
+neon lights: 1
+shoulder bag: 1
+hand on another's face: 1
+link: 1
+bubble: 1
+underwater: 1
+air bubble: 1
+swimming: 1
+navel: 1
+arms at sides: 1
+post-apocalypse: 1
+denim shorts: 1
+thighhighs: 1
+upside-down: 1
+spoon: 1
+rice: 1
+vegetable: 1
+omelet: 1
+shrimp: 1
+soup: 1
+on side: 1
+blue hair: 1
+earphones: 1
+small breasts: 1
+looking up: 1
+blue pants: 1
+looking at mirror: 1
+personality switch: 1
+fruit: 1
+red shirt: 1
+refrigerator: 1
+stove: 1
+cutting board: 1
+holding book: 1
+electric fan: 1
+handbag: 1
+spring (season): 1
+library: 1
+bathroom: 1
+piano: 1
+grand piano: 1
+necklace: 1
+tower: 1
+hand up: 1
+yellow shirt: 1
+black jacket: 1
+pikachu: 1
+bedroom: 1
+brown shorts: 1
+gradient background: 1
+coffee mug: 1
+light smile: 1
+knee boots: 1
+lips: 1
+fubuki (kancolle): 1
+floral print: 1
+torch: 1
+leash: 1
+red dress: 1
+meme: 1
+scene reference: 1
+energy: 1
+holding cigarette: 1
+pencil case: 1
+bandages: 1
+bandaid: 1
+wet hair: 1
+shower head: 1
+faucet: 1
+skull: 1
+3girls: 1
+child: 1
+blanket: 1
+hospital bed: 1
+hospital gown: 1
+pantyhose: 1
+crowd: 1
+drinking straw: 1
+drink: 1
+danmaku: 1
+side ponytail: 1
+hands up: 1
+red skirt: 1
+pink skirt: 1
+praying: 1
+tongue: 1
+blood: 1
+blood on face: 1
+black shirt: 1
+neck bell: 1
+computer: 1
+laptop: 1
+hands in pockets: 1
+eyewear removed: 1
+suitcase: 1
+luggage: 1
+rolling suitcase: 1
+facial hair: 1
+pregnant: 1
+baby: 1
+husband and wife: 1
+mother and son: 1
+father and son: 1
+sword: 1
+crossed legs: 1
+mushroom: 1
+spread wings: 1
+sidewalk: 1
+heart: 1
+cookie: 1
+steam: 1
+hairband: 1
+red hairband: 1
+hug from behind: 1
+winter clothes: 1
+fujimaru ritsuka (male): 1
+arms up: 1
+tying hair: 1
+medium hair: 1
+off shoulder: 1
+messy hair: 1
+pajamas: 1
+ahoge: 1
+neck ribbon: 1
+green skirt: 1
+cover page: 1
+very long hair: 1
+wide sleeves: 1
+fingernails: 1
+ribbon trim: 1
+hakama: 1
+hakama skirt: 1
+white ribbon: 1
+jingle bell: 1
+red nails: 1
+ribbon-trimmed sleeves: 1
+white kimono: 1
+red lips: 1
+red hakama: 1
+hugging own legs: 1
+orange theme: 1
+kaname madoka: 1
+dutch angle: 1
+island: 1
+thrusters: 1
+graffiti: 1
+plaid: 1
+plaid skirt: 1
+deer: 1
+hair bun: 1
+single hair bun: 1
+fork: 1
+4girls: 1
+pointing: 1
+pointing up: 1
+simple background: 1
+black background: 1
+fake screenshot: 1
+purple necktie: 1
+chromatic aberration: 1
+tanabata: 1
+yellow footwear: 1
+pavement: 1
+done!
+01:40:05-428118 INFO     ...captioning done

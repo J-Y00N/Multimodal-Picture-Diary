@@ -1,0 +1,12 @@
+{
+  "mode": "img2img",
+  "style": "monet",
+  "preset": "balanced",
+  "seed": 42,
+  "prompt_text": "비온 뒤 집으로 가는 중!",
+  "reference_image": "assets/demo/input/sample.jpg",
+  "reference_mode": "preserve_photo",
+  "denoise_strength": 0.25,
+  "lora_scale": 0.76,
+  "resolved_prompt": "msl monet, soft brush strokes, impressionist color palette, calm, intimate, diary-like, diary illustration, 비온, 집으로, 가는, reference image provided, landscape composition, painterly, cohesive scene, reference image provided, landscape composition"
+}
