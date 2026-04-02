@@ -12,6 +12,16 @@ This repository focuses on three layers:
 
 This repository does **not** vendor the full `kohya_ss` training codebase. Instead, it documents the preserved training conditions as faithfully as possible.
 
+## Related links
+
+- Live Streamlit demo: <https://multimodal-picture-diary-25vtwte77q6nxwtbdhhpp9.streamlit.app/>
+- Monet LoRA model card: <https://huggingface.co/J-YOON/lora-monet-sd1.5>
+- Animate Landscape LoRA model card: <https://huggingface.co/J-YOON/animate-lora-sd1.5>
+
+The app repository and the two Hugging Face model repositories are maintained by the same author, but kept separate so the application code, demo assets, and LoRA weights can be versioned independently.
+
+The Streamlit page is included as a lightweight project demo. Because it runs on free hosting, first load and first generation can be noticeably slow.
+
 ## Run locally
 
 ```bash
@@ -131,8 +141,8 @@ Notes:
 
 ## Suggested deployment split
 
-- **GitHub repo**: this repository (`multimodal-picture-diary`)
-- **HF model repos**: `J-YOON/lora-monet-sd1.5`, `J-YOON/animate-lora-sd1.5`
+- **GitHub app repo**: <https://github.com/J-Y00N/Multimodal-Picture-Diary>
+- **HF model repos**: <https://huggingface.co/J-YOON/lora-monet-sd1.5>, <https://huggingface.co/J-YOON/animate-lora-sd1.5>
 - **HF Space repo**: `multimodal-picture-diary-space` (template included under `hf_repo_skeletons/`)
 
 ## Development notes
