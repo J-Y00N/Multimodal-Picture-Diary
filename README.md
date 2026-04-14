@@ -20,6 +20,14 @@ The app repository and the two Hugging Face model repositories are maintained by
 
 The Streamlit page is included as a lightweight project demo. Because it runs on free hosting, first load and first generation can be noticeably slow.
 
+## References
+
+- Base model: [runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+- Monet dataset reference: [Kaggle - GAN Getting Started / Monet-style dataset](https://www.kaggle.com/competitions/gan-getting-started/data)
+- Animate dataset reference: [Hugging Face - Fung804/makoto-shinkai-picture](https://huggingface.co/datasets/Fung804/makoto-shinkai-picture)
+
+The original LoRA experiments were reconstructed from preserved `kohya_ss`-era configs and logs. Dataset links above are included as public references for the style experiments and preserved training context.
+
 ## Run locally
 
 ```bash
