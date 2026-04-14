@@ -1,6 +1,10 @@
 # Multimodal Picture Diary
 
-A personal refactor and rebuild of a diary-to-image application based on the original MS AI School team project.
+Diary-to-image Streamlit app that turns diary text and reference photos into stylized picture-diary pages.
+
+**Live Demo**: <https://multimodal-picture-diary-25vtwte77q6nxwtbdhhpp9.streamlit.app/>  
+**Model Cards**: [Monet LoRA](https://huggingface.co/J-YOON/lora-monet-sd1.5) | [Animate Landscape LoRA](https://huggingface.co/J-YOON/animate-lora-sd1.5)  
+**Tech Stack**: Python, Streamlit, PyTorch, Diffusers, Stable Diffusion 1.5, LoRA
 
 ## Overview
 
@@ -11,12 +15,6 @@ This repository focuses on three layers:
 3. **Training provenance layer**: preserved config files, logs, and reconstruction notes for the original LoRA training runs.
 
 This repository does **not** vendor the full `kohya_ss` training codebase. Instead, it documents the preserved training conditions as faithfully as possible.
-
-## Related links
-
-- Live Streamlit demo: <https://multimodal-picture-diary-25vtwte77q6nxwtbdhhpp9.streamlit.app/>
-- Monet LoRA model card: <https://huggingface.co/J-YOON/lora-monet-sd1.5>
-- Animate Landscape LoRA model card: <https://huggingface.co/J-YOON/animate-lora-sd1.5>
 
 The app repository and the two Hugging Face model repositories are maintained by the same author, but kept separate so the application code, demo assets, and LoRA weights can be versioned independently.
 
